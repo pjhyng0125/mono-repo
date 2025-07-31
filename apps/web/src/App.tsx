@@ -1,11 +1,11 @@
-import { Test } from "@/components/Test";
+import { WebTest } from "@/components/WebTest";
 
 import "./App.css";
 
 function App() {
   return (
     <>
-      <Test />
+      <WebTest />
     </>
   );
 }
