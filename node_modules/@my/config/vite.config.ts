@@ -1,20 +1,17 @@
-import react from '@vitejs/plugin-react';
-import path from 'path';
-import { defineConfig } from 'vite';
-import Pages from 'vite-plugin-pages';
+import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
+import Pages from "vite-plugin-pages";
 
 export default defineConfig({
   plugins: [
     react(),
     Pages({
-      dirs: 'src/pages',
-      extensions: ['tsx'],
+      dirs: "src/pages",
+      extensions: ["tsx"],
     }),
   ],
   resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src'),
-    },
+    alias: {},
   },
   server: {
     port: 3000,

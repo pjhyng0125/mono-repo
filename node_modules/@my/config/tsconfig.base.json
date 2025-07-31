@@ -25,10 +25,8 @@
     "noUncheckedSideEffectImports": true,
 
     /* 절대경로 설정 추가 */
-    "baseUrl": "./src",
-    "paths": {
-      "@/*": ["*"]
-    }
-  },
-  "include": ["src"]
+    "baseUrl": ".", // 여기선 의미 없음, 각 앱 tsconfig가 이걸 상속
+    "paths": {} // 여기서 alias는 정의하지 않음
+  }
+  // "include": ["src"]
 }
