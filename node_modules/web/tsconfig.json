@@ -1,0 +1,7 @@
+{
+  "extends": "../../packages/config/tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "./src" // src 아래에서 경로 상대 처리
+  },
+  "include": ["src"]
+}
